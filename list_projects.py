@@ -27,7 +27,7 @@ workspace_ids = [item.id for item in workspaces_response.data]
 for workspace_id in workspace_ids:
     workspace_response = client.Workspaces.get_workspace(workspace_id, load_all=True)
     # print('  ' + str(workspace_response.id) + '  ' + workspace_response.name)
-    pcr_sheets = find_pcr_sheet(workspace_response, blacklist, pcr_sheets)
+    pcr_sheets = find_pcr_sheet(client, workspace_response, blacklist, pcr_sheets)
 
 # End with counts
 print ('\nTotal Workspaces: ' + str(len(workspace_ids)))
