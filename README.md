@@ -13,3 +13,6 @@ Find PCR sheets and update them with _automation section_ from template-sheet
 7. To run migration test 1, run `python3 copy_test1.py`
 8. To run migration test 2, run `python3 copy_test2.py`
 9. To run the full migration, run `python3 copy_automation.py`
+
+## Requires
+Python 3.x

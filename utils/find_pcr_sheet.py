@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from collections.abc import Iterable
 # from utils.find_pcrid_column import find_pcrid_column
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import configparser
 import smartsheet
 from utils.find_pcr_sheet import find_pcr_sheet

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def find_pcrid_column(columns):
     for column in columns:
         if column.title == 'PCR ID':
