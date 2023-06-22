@@ -12,7 +12,8 @@ api_key = config.get('Smartsheet', 'API_KEY')
 # Do not use test-sheets
 blacklist = [
     int(config.get('Smartsheet', 'SOURCE_SMARTSHEET_TEST1_ID')),
-    int(config.get('Smartsheet', 'SOURCE_SMARTSHEET_TEST2_ID'))
+    int(config.get('Smartsheet', 'SOURCE_SMARTSHEET_TEST2_ID')),
+    int(config.get('Smartsheet', 'SOURCE_SMARTSHEET_TEST3_ID'))
 ]
 
 pcr_sheets = [] # Collection of PCR Sheets
