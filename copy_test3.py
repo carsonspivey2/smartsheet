@@ -14,14 +14,14 @@ client = smartsheet.Smartsheet(api_key)
 
 # Read Smartsheet IDs from config file
 template_smartsheet_id = config.get('Smartsheet', 'SOURCE_SMARTSHEET_TEMPLATE_ID')
-test_smartsheet_id = config.get('Smartsheet', 'SOURCE_SMARTSHEET_TEST1_ID')
+test_smartsheet_id = config.get('Smartsheet', 'SOURCE_SMARTSHEET_TEST3_ID')
 
 # Get sheets
 template_sheet = client.Sheets.get_sheet(template_smartsheet_id)
 test_sheet = client.Sheets.get_sheet(test_smartsheet_id)
 
 # Append template data
-print('Updating Test Sheet 1: ID ' + test_smartsheet_id)
+print('Updating Test Sheet 3: ID ' + test_smartsheet_id)
 #   Columns - check first, then add
 hasPrcColumns = find_pcrid_column(test_sheet.columns)
 if not hasattr(test_sheet, 'columns') and not hasPrcColumns:

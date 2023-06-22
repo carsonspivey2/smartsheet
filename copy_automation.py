@@ -49,7 +49,7 @@ for pcr_sheet in pcr_sheets
     print('  Adding ' + str(template_sheet.row) + ' new rows')
     pcr_sheet.rows.append(template_sheet.rows)
     # Replace the sheet with the newly appended data and save it
-    client.Sheets.update_sheet(target_sheet_id, sheet=smartsheet.models.Sheet(automation=automation))
+    client.Sheets.update_sheet(pcr_sheet.id, smartsheet.models.Sheet(pcr_sheet))
     print('\n')
 
 print('\nAutomation section data mirroring complete')
